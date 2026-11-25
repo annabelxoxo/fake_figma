@@ -1,0 +1,36 @@
+name: Bug
+description: Meld iets dat niet werkt zoals verwacht
+title: "Fix: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: beschrijving
+    attributes:
+      label: Wat gaat er mis?
+      description: Een korte, duidelijke beschrijving van de bug.
+    validations:
+      required: true
+  - type: textarea
+    id: stappen
+    attributes:
+      label: Stappen om te reproduceren
+      placeholder: |
+        1. Ga naar ...
+        2. Klik op ...
+        3. Zie de fout
+    validations:
+      required: true
+  - type: textarea
+    id: verwacht
+    attributes:
+      label: Verwacht gedrag
+      description: Wat had er moeten gebeuren?
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots / extra info
+      description: Foutmeldingen, browser, screenshots...
+    validations:
+      required: false
